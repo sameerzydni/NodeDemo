@@ -22,7 +22,7 @@ con.on("open", function () {
 
 // Sample Router
 const sampleRouter = require("./routers/sampleRouter");
-app.use("/sample", sampleRouter);
+app.use("/", sampleRouter);
 
 // Listening to the port
 const port = process.env.port || 9020;
